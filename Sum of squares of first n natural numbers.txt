@@ -1,0 +1,17 @@
+ def Square(a):
+    summ=0
+    if a<0 or a==0:
+        return("\nPlease Enter the Position greater than 0\n")
+      
+    else:
+        
+        while a>=1:
+            summ=summ+(a*a)
+            a=a-1
+        return summ    
+  
+if __name__ == '__main__':
+     a=int(input("Enter nth-position at which u want to print sum of squares of n natural numbers\n"))
+     Square(a)
+     print(f"After sum of nth {a} Position is=\t",Square(a)) 
+   
